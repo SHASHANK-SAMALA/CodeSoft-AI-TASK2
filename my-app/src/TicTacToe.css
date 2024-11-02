@@ -1,0 +1,93 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.tic-tac-toe {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #fafafa;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.square:hover {
+  background-color: #ececec;
+  transform: scale(1.05);
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button.human {
+  background-color: #007bff;
+}
+
+.button.human.active {
+  background-color: #0056b3;
+}
+
+.button.ai {
+  background-color: #6c757d;
+}
+
+.button.ai.active {
+  background-color: #495057;
+}
+
+.button.reset {
+  background-color: #28a745;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.button.reset:hover {
+  background-color: #218838;
+}
